@@ -1,0 +1,71 @@
+$sg-spacing: 1em;
+$sg-color-primary: #95a5a6;
+$sg-color-link: #697374;
+$sg-screen-md: 800px;
+
+.sg {
+    font: normal normal normal 16px/1 Helvetica, 'Helvetica Neue', Arial;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.sg-navigation {
+    flex: 1 100%;
+    padding: $sg-spacing;
+    border-bottom: 1px solid $sg-color-primary;
+    background-color: $sg-color-link;
+    color: #fff;
+
+    @media (min-width: $sg-screen-md) {
+        flex: 1;
+    }
+
+    &__list {
+
+        list-style: none;
+
+        a {
+            display: inline-block;
+            padding: ($sg-spacing / 2);
+            color: inherit;
+            text-decoration: none;
+        }
+
+        @media (min-width: $sg-screen-md) {
+            //position: fixed;
+        }
+    }
+}
+
+.sg-content {
+    flex: 1 100%;
+    @media (min-width: $sg-screen-md) {
+        flex: 2;
+        padding-left: $sg-spacing;
+    }
+}
+
+.sg-anchor {
+    color: $sg-color-link;
+}
+
+.sg__headline {
+    padding: ($sg-spacing / 2);
+    border-bottom: 1px solid $sg-color-primary;
+}
+
+.sg-code-snippet {
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: none;
+
+    &--visible {
+        display: block;
+    }
+}
+

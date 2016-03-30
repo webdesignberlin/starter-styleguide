@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head lang="de">
+    <meta charset="UTF-8">
+    <title>Styleguide </title>
+    <link href="styles/styleguide.css" type="text/css" rel="stylesheet" media="all">
+</head>
+<body class="sg">
+
+<nav class="sg-navigation anchorific">
+    <button id="snippet-toggle" class="button--primary">Toggle Code Snippets</button>
+</nav>
+
+<main class="sg-content">
+    <h1 class="sg__headline">Styleguide</h1>
+
+    <article>
+        <h1 class="sg__headline" id="sg-category-base">Base Elements</h1>
+
+        <section class="sg-section" id="sg-section-address">
+            <header>
+                <h2 class="sg__headline">Address</h2>
+            </header>
+            <div class="sg-section__content">
+                {% include 'markup/base/address.html' %}
+            </div>
+            <footer>
+                <button class="sg-snippet-toggle" data-sg-target="code-sg-section-address">Toggle Code Snippets</button>
+            </footer>
+        </section>
+
+        <section class="sg-section" id="sg-section-blockquote">
+            <h2 class="sg__headline">blockquote</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/blockquote.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-details">
+            <h2 class="sg__headline">details</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/details.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-figure">
+            <h2 class="sg__headline">figure</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/figure.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-form-buttons">
+            <h2 class="sg__headline">form-buttons</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/form-buttons.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-form-fields-default">
+            <h2 class="sg__headline">form-fields-default</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/form-fields-default.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-form-fields-disabled">
+            <h2 class="sg__headline">form-fields-disabled</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/form-fields-disabled.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-form-fieldset">
+            <h2 class="sg__headline">form-fieldset</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/form-fieldset.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-form-fields-readonly">
+            <h2 class="sg__headline">form-fields-readonly</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/form-fields-readonly.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-form-fields-with-datalist">
+            <h2 class="sg__headline">form-fields-with-datalist</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/form-fields-with-datalist.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-headings">
+            <h2 class="sg__headline">headings</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/headings.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-hr">
+            <h2 class="sg__headline">hr</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/hr.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-list-definition">
+            <h2 class="sg__headline">list-definition</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/list-definition.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-list-ordered">
+            <h2 class="sg__headline">list-ordered</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/list-ordered.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-list-unordered">
+            <h2 class="sg__headline">list-unordered</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/list-unordered.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-media">
+            <h2 class="sg__headline">media</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/media.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-meter-and-progress">
+            <h2 class="sg__headline">meter-and-progress</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/meter-and-progress.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-preformated-text">
+            <h2 class="sg__headline">preformated-text</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/preformated-text.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-sample-content-block">
+            <h2 class="sg__headline">sample-content-block</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/sample-content-block.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-tabular-data">
+            <h2 class="sg__headline">tabular-data</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/tabular-data.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-text-elements">
+            <h2 class="sg__headline">text-elements</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/text-elements.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-time">
+            <h2 class="sg__headline">time</h2>
+            <div class="sg-section__content">
+                {% include 'markup/base/time.html' %}
+            </div>
+        </section>
+
+    </article>
+
+    <article>
+        <h1 class="sg__headline" id="sg-category-modules">Modules</h1>
+
+        <section class="sg-section" id="sg-section-module-headlines">
+            <h2 class="sg__headline">Module Headlines</h2>
+            <div class="sg-section__content sg__content--font">
+                {% include 'markup/modules/headlines.html' %}
+            </div>
+        </section>
+
+        <section class="sg-section" id="sg-section-modul-colors">
+            <h2 class="sg__headline">Modul Colors</h2>
+            <div class="sg-section__content">
+                {% include 'markup/modules/colors.html' %}
+            </div>
+        </section>
+
+    </article>
+
+    <a href="#top" class="top">Back to top</a>
+</main>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/nunjucks/2.1.0/nunjucks-slim.min.js" defer></script>
+<!--<script src="js/templates-styleguide.js" defer></script>
+<script src="js/styleguide.js" defer></script>-->
+
+<script>
+    /*! anchorific 2014-08-06 */
+    "function"!=typeof Object.create&&(Object.create=function(a){function b(){}return b.prototype=a,new b}),function(a,b,c,d){"use strict";var e={init:function(b,c){var d=this;d.elem=c,d.$elem=a(c),d.opt=a.extend({},this.opt,b),d.headers=d.$elem.find(".sg__headline"),d.previous=0,0!==d.headers.length&&(d.first=parseInt(d.headers.prop("nodeName").substring(1),null)),d.build()},opt:{navigation:".anchorific",speed:200,anchorClass:"sg-anchor",anchorText:"#",top:".top",spy:!0,position:"append",spyOffset:!0},build:function(){var b,c=this,d=function(){};c.opt.navigation&&(a(c.opt.navigation).append("<ul class='sg-navigation__list' />"),c.previous=a(c.opt.navigation).find("ul").last(),d=function(a){return c.navigations(a)});for(var e=0;e<c.headers.length;e++)b=c.headers.eq(e),d(b),c.anchor(b);c.opt.spy&&c.spy(),c.opt.top&&c.back()},navigations:function(b){var c,e,f,g=this,h=g.name(b);b.attr("id")!==d&&(h=b.attr("id")),c=a("<a />").attr("href","#"+h).text(b.text()),e=a("<li />").append(c),f=parseInt(b.prop("nodeName").substring(1),null),e.attr("data-tag",f),g.subheadings(f,e),g.first=f},subheadings:function(b,c){var d=this,e=(a(d.opt.navigation).find("ul"),a(d.opt.navigation).find("li"));b===d.first?d.previous.append(c):b>d.first?(e.last().append("<ul />"),a(d.opt.navigation).find("ul").last().append(c),d.previous=c.parent()):(a("li[data-tag="+b+"]").last().parent().append(c),d.previous=c.parent())},name:function(a){var b=a.text().replace(/[^\w\s]/gi,"").replace(/\s+/g,"-").toLowerCase();return b},anchor:function(b){var c,e,f=this,g=f.name(b),h=f.opt.anchorText,i=f.opt.anchorClass;b.attr("id")===d&&b.attr("id",g),e=b.attr("id"),c=a("<a />").attr("href","#"+e).html(h).addClass(i),"append"===f.opt.position?b.append(c):b.prepend(c)},back:function(){var b=this,c=a("body, html"),d=a(b.opt.top);d.on("click",function(a){a.preventDefault(),c.animate({scrollTop:0},b.opt.speed)})},top:function(b){var c,d=this,e=d.opt.top;e!==!1&&(c=a(b).scrollTop()>200?a(e).fadeIn():a(e).fadeOut())},spy:function(){var c,e,f,g=this;a(b).scroll(function(){g.top(this),c=g.headers.map(function(){return a(this).offset().top-a(b).scrollTop()<g.opt.spyOffset?this:void 0}),c=a(c).eq(c.length-1),c&&c.length&&(e=a('li:has(a[href="#'+c.attr("id")+'"])'),f!==d&&f.removeClass("active"),e.addClass("active"),f=e)})}};a.fn.anchorific=function(b){return this.each(function(){if(!a.data(this,"anchorific")){var c=Object.create(e);c.init(b,this),a.data(this,"anchorific",c)}})}}(jQuery,window,document);
+
+    $('.sg').anchorific();
+    $('.sg-anchor').css('margin-left','10px');
+    //$('.sg-section .sg-anchor').remove();
+
+
+    var colorListItem = $('.color-list__item');
+    colorListItem.each(function(index) {
+        var $this = $(this),
+                currentBackgroundColor = $this.css( 'background-color' );
+        $this.find('.color-list__name').append(': '+currentBackgroundColor);
+    });
+
+
+    var fontSelector = $('.sg__content--font *:not(ul)');
+    fontSelector.each(function(index) {
+        var $this = $(this),
+                currentFontSize = $this.css( 'font-size'),
+                currentLineHeight = $this.css( 'line-height'),
+                currentFontFamilyComplete = $this.css( 'font-family');
+        var s = currentFontFamilyComplete;
+        var n = s.indexOf(',');
+        s = s.substring(0, n != -1 ? n : s.length);
+        currentFontFamily = s;
+        /*$this.append('<span class="styleguide__font-info">Font Size: '+currentFontSize+' Line Height: '+currentLineHeight+' Font Family: '+currentFontFamily+'</span>');*/
+        var currentText = $this.text();
+        $this.text(currentText+' | Font Size: '+currentFontSize+' Line Height: '+currentLineHeight+' Font Family: '+currentFontFamily);
+    });
+
+</script>
+
+<script>
+    (function () {
+        'use strict';
+
+        var snippetToggle = document.querySelector('#snippet-toggle');
+        var snippets;
+
+        snippetToggle.addEventListener('click', function () {
+            if (snippets) {
+                for (var i = 0; i < snippets.length; i++) {
+                    snippets[i].classList.toggle('sg-code-snippet--visible');
+                }
+            }
+        });
+
+        window.onload = function () {
+            createCodeSamples();
+            snippets = document.querySelectorAll('.sg-code-snippet');
+        };
+
+        var snippetToggles = document.querySelectorAll('.sg-snippet-toggle');
+        for (var i = 0; i < snippetToggles.length; i++) {
+            var currentSnippetToggle = snippetToggles[i];
+            var currentSnippetToggleTarget = currentSnippetToggle.dataset.sgTarget;
+            var currentSnippetToggleTargetElement = '#' + currentSnippetToggleTarget;
+            var blubba = document.querySelector(currentSnippetToggleTargetElement);
+            console.log(blubba);
+
+            /*currentSnippetToggle.addEventListener('click', function () {
+                for (var i = 0; i < snippets.length; i++) {
+                    snippets[i].classList.toggle('sg-code-snippet--visible');
+                }
+            });*/
+        }
+
+
+        function createCodeSamples() {
+            var codeWrappers = document.querySelectorAll('.sg-section:not(.sg-section--no-code)');
+            console.log(codeWrappers);
+
+            for (var i = 0; i < codeWrappers.length; i++) {
+                var codeWrapper = codeWrappers[i];
+                var clonedNodes = getClonedNonTextNodes(codeWrapper);
+
+                beautifyNodes(clonedNodes);
+
+                var preElement = document.createElement('pre');
+                var codeElement = document.createElement('code');
+                var preElementId = 'code-' + codeWrapper.getAttribute('id');
+                preElement.setAttribute('id', preElementId);
+
+                for (var j = 0; j < clonedNodes.length; j++) {
+                    codeElement.appendChild(document.createTextNode(clonedNodes[j].outerHTML));
+
+                    if (j + 1 < clonedNodes.length) {
+                        codeElement.appendChild(document.createTextNode('\n'));
+                    }
+                }
+
+                preElement.appendChild(codeElement);
+                preElement.classList.add('sg-code-snippet');
+                //preElement.classList.add('sg-code-snippet__content');
+
+                var clearDiv = document.createElement('div');
+                clearDiv.classList.add('clear');
+
+                var parent = codeWrapper.parentNode;
+
+                if (codeWrapper.nextSibling) {
+                    parent.insertBefore(preElement, codeWrapper.nextSibling);
+                } else {
+                    parent.appendChild(preElement);
+                }
+
+                parent.insertBefore(clearDiv, preElement);
+            }
+        }
+
+        function getClonedNonTextNodes(element) {
+            var nonTextNodes = [];
+            var childNodes = element.childNodes;
+
+            for (var i = 0; i < childNodes.length; i++) {
+                var childElement = childNodes[i];
+
+                if (childElement.nodeType !== 3) {
+                    // Found a valid child element
+                    nonTextNodes.push(childElement.cloneNode(true));
+                }
+            }
+
+            return nonTextNodes;
+        }
+
+        function beautifyNodes(elements) {
+            for (var i = 0; i < elements.length; i++) {
+                beautifyNode(elements[i], 0);
+            }
+        }
+
+        function beautifyNode(element, depth) {
+            var childNodes = element.childNodes;
+            var singleIndent = '    ';
+            var currentDepthSpacing = '';
+
+            for (var i = 0; i < depth; i++) {
+                currentDepthSpacing += singleIndent;
+            }
+
+            var nextDepthSpacing = currentDepthSpacing + singleIndent;
+
+            for (var j = 0; j < childNodes.length; j++) {
+                var childElement = childNodes[j];
+
+                if (childElement.nodeType === 3) {
+                    // found a text node
+                    if (childElement.nodeValue.indexOf('\n') >= 0) {
+                        if (j + 1 < childNodes.length) {
+                            childElement.nodeValue = '\n' + nextDepthSpacing;
+                        } else {
+                            childElement.nodeValue = '\n' + currentDepthSpacing;
+                        }
+                    }
+                } else {
+                    beautifyNode(childElement, depth + 1);
+                }
+            }
+        }
+    })();
+</script>
+
+</body>
+</html>

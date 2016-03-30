@@ -1,0 +1,17 @@
+# sync as default
+'default':
+  - 'sync'
+
+# BrowserSync
+'sync':
+  - 'browserSync'
+  - 'watch'
+
+# Styleguide
+'build-sg':
+  - 'sass:sg'
+  - 'nunjucks:sg'
+  - 'htmlmin:sg'
+#  - 'nunjucksDynamic:sg'
+  - 'browserify:sg'
+  - 'uglify:sg'
