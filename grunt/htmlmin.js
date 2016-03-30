@@ -9,7 +9,7 @@ module.exports = {
     sg: {
         options: {
             removeComments: false,
-            collapseWhitespace: true
+            collapseWhitespace: false
         },
         files: [{
             expand: true,
