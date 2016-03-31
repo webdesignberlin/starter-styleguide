@@ -47,9 +47,8 @@ module.exports = function(){
 
     for (var i = 0; i < codeWrappers.length; i++) {
       var codeWrapper = codeWrappers[i];
-      var clonedNodes = getClonedNonTextNodes(codeWrapper);
-
-      beautifyNodes(clonedNodes);
+      console.log(codeWrapper);
+      var clonedNodes = codeWrapper.innerHTML;
 
       var preElement = document.createElement('pre');
       var codeElement = document.createElement('code');
@@ -57,13 +56,11 @@ module.exports = function(){
       var preElementId = 'code-' + codeWrapper.parentElement.getAttribute('id');
       preElement.setAttribute('id', preElementId);
 
-      for (var j = 0; j < clonedNodes.length; j++) {
-        codeElement.appendChild(document.createTextNode(clonedNodes[j].outerHTML));
+      console.log(clonedNodes);
 
-        if (j + 1 < clonedNodes.length) {
-          codeElement.appendChild(document.createTextNode('\n'));
-        }
-      }
+      //console.log(clonedNodes);
+
+      codeElement.textContent = clonedNodes;
 
       preElement.appendChild(codeElement);
       preElement.classList.add('sg-code-snippet');
@@ -74,59 +71,6 @@ module.exports = function(){
         parent.insertBefore(preElement, codeWrapper.nextSibling);
       } else {
         parent.appendChild(preElement);
-      }
-
-      parent.insertBefore(preElement, preElement);
-    }
-  }
-
-  function getClonedNonTextNodes(element) {
-    var nonTextNodes = [];
-    var childNodes = element.childNodes;
-
-    for (var i = 0; i < childNodes.length; i++) {
-      var childElement = childNodes[i];
-
-      if (childElement.nodeType !== 3) {
-        // Found a valid child element
-        nonTextNodes.push(childElement.cloneNode(true));
-      }
-    }
-
-    return nonTextNodes;
-  }
-
-  function beautifyNodes(elements) {
-    for (var i = 0; i < elements.length; i++) {
-      beautifyNode(elements[i], 0);
-    }
-  }
-
-  function beautifyNode(element, depth) {
-    var childNodes = element.childNodes;
-    var singleIndent = '    ';
-    var currentDepthSpacing = '';
-
-    for (var i = 0; i < depth; i++) {
-      currentDepthSpacing += singleIndent;
-    }
-
-    var nextDepthSpacing = currentDepthSpacing + singleIndent;
-
-    for (var j = 0; j < childNodes.length; j++) {
-      var childElement = childNodes[j];
-
-      if (childElement.nodeType === 3) {
-        // found a text node
-        if (childElement.nodeValue.indexOf('\n') >= 0) {
-          if (j + 1 < childNodes.length) {
-            childElement.nodeValue = '\n' + nextDepthSpacing;
-          } else {
-            childElement.nodeValue = '\n' + currentDepthSpacing;
-          }
-        }
-      } else {
-        beautifyNode(childElement, depth + 1);
       }
     }
   }
