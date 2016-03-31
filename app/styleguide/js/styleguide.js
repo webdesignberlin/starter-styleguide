@@ -4,8 +4,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  var renderSg = require('./renderStyleguide');
-  console.log(renderSg);
-  renderSg();
+  //var renderSg = require('./renderStyleguide');
+  var generateCodeSnippets = require('./codeSnippets');
+  //renderSg();
+  generateCodeSnippets();
 
 });

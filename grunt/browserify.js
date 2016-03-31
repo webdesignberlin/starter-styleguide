@@ -9,7 +9,7 @@ module.exports = {
     sg: {
         options: {
             browserifyOptions: {
-                debug: false
+                debug: true
             }
         },
         files: {
