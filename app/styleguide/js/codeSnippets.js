@@ -47,7 +47,6 @@ module.exports = function(){
 
     for (var i = 0; i < codeWrappers.length; i++) {
       var codeWrapper = codeWrappers[i];
-      console.log(codeWrapper);
       var clonedNodes = codeWrapper.innerHTML;
 
       var preElement = document.createElement('pre');
@@ -55,10 +54,6 @@ module.exports = function(){
       // get ID of parent section
       var preElementId = 'code-' + codeWrapper.parentElement.getAttribute('id');
       preElement.setAttribute('id', preElementId);
-
-      console.log(clonedNodes);
-
-      //console.log(clonedNodes);
 
       codeElement.textContent = clonedNodes;
 

@@ -10,8 +10,8 @@
 # Styleguide
 'build-sg':
   - 'sass:sg'
+  - 'postcss:sg'
   - 'nunjucks:sg'
   - 'htmlmin:sg'
-#  - 'nunjucksDynamic:sg'
   - 'browserify:sg'
   - 'uglify:sg'

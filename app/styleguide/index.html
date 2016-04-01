@@ -6,20 +6,33 @@
     <link href="styles/styleguide.css" type="text/css" rel="stylesheet" media="all">
 </head>
 <body class="sg">
-
+<div class="sg-app">
 <nav class="sg-navigation anchorific">
     <button id="snippet-toggle" class="button--primary">Toggle Code Snippets</button>
 </nav>
 
 <main class="sg-content">
+    <a href="#" id="top"></a>
     <h1 class="sg__headline">Styleguide</h1>
+
+    <article>
+        <div class="sg-card">
+            <h2 class="sg__headline sg-card__headline" id="intro-browser-support">Browser support:</h2>
+            <p>The standards are designed to support both older and newer browsers through progressive enhancement, and officially support Internet Explorer 10 and up, and the latest versions of Chrome, Firefox, and Safari.</p>
+        </div>
+
+        <div class="sg-card">
+            <h2 class="sg__headline sg-card__headline" id="intro-ui-components-and-patterns">UI components and patterns</h2>
+            <p>The site contains HTML mockups of common UI components designed to follow the Draft Web Design Standards' visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, etc.), use your browser’s developer tools.</p>
+        </div>
+    </article>
 
     <article>
         <h1 class="sg__headline" id="sg-category-base">Base Elements</h1>
 
-        <section class="sg-section" id="sg-section-address">
+        <section class="sg-section sg-card" id="sg-section-address">
             <header class="sg-section__header">
-                <h2 class="sg__headline">Address</h2>
+                <h2 class="sg__headline sg-card__headline">Address</h2>
             </header>
             <div class="sg-section__content">
                 {% include 'markup/base/address.html' %}
@@ -29,9 +42,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-blockquote">
+        <section class="sg-section sg-card" id="sg-section-blockquote">
             <header class="sg-section__header">
-                <h2 class="sg__headline">blockquote</h2>
+                <h2 class="sg__headline sg-card__headline">blockquote</h2>
             </header>
             <div class="sg-section__content">
                 {% include 'markup/base/blockquote.html' %}
@@ -41,9 +54,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-details">
+        <section class="sg-section sg-card" id="sg-section-details">
             <header class="sg-section__header">
-                <h2 class="sg__headline">details</h2>
+                <h2 class="sg__headline sg-card__headline">details</h2>
             </header>
             <div class="sg-section__content">
                 {% include 'markup/base/details.html' %}
@@ -53,9 +66,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-figure">
+        <section class="sg-section sg-card" id="sg-section-figure">
             <header class="sg-section__header">
-            <h2 class="sg__headline">figure</h2>
+            <h2 class="sg__headline sg-card__headline">figure</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/figure.html' %}
@@ -65,9 +78,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-form-buttons">
+        <section class="sg-section sg-card" id="sg-section-form-buttons">
             <header class="sg-section__header">
-            <h2 class="sg__headline">form-buttons</h2>
+            <h2 class="sg__headline sg-card__headline">form-buttons</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/form-buttons.html' %}
@@ -77,9 +90,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-form-fields-default">
+        <section class="sg-section sg-card" id="sg-section-form-fields-default">
             <header class="sg-section__header">
-            <h2 class="sg__headline">form-fields-default</h2>
+            <h2 class="sg__headline sg-card__headline">form-fields-default</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/form-fields-default.html' %}
@@ -89,9 +102,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-form-fields-disabled">
+        <section class="sg-section sg-card" id="sg-section-form-fields-disabled">
             <header class="sg-section__header">
-            <h2 class="sg__headline">form-fields-disabled</h2>
+            <h2 class="sg__headline sg-card__headline">form-fields-disabled</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/form-fields-disabled.html' %}
@@ -101,9 +114,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-form-fieldset">
+        <section class="sg-section sg-card" id="sg-section-form-fieldset">
             <header class="sg-section__header">
-            <h2 class="sg__headline">form-fieldset</h2>
+            <h2 class="sg__headline sg-card__headline">form-fieldset</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/form-fieldset.html' %}
@@ -113,9 +126,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-form-fields-readonly">
+        <section class="sg-section sg-card" id="sg-section-form-fields-readonly">
             <header class="sg-section__header">
-            <h2 class="sg__headline">form-fields-readonly</h2>
+            <h2 class="sg__headline sg-card__headline">form-fields-readonly</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/form-fields-readonly.html' %}
@@ -125,9 +138,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-form-fields-with-datalist">
+        <section class="sg-section sg-card" id="sg-section-form-fields-with-datalist">
             <header class="sg-section__header">
-            <h2 class="sg__headline">form-fields-with-datalist</h2>
+            <h2 class="sg__headline sg-card__headline">form-fields-with-datalist</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/form-fields-with-datalist.html' %}
@@ -137,9 +150,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-headings">
+        <section class="sg-section sg-card" id="sg-section-headings">
             <header class="sg-section__header">
-            <h2 class="sg__headline">headings</h2>
+            <h2 class="sg__headline sg-card__headline">headings</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/headings.html' %}
@@ -149,9 +162,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-hr">
+        <section class="sg-section sg-card" id="sg-section-hr">
             <header class="sg-section__header">
-            <h2 class="sg__headline">hr</h2>
+            <h2 class="sg__headline sg-card__headline">hr</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/hr.html' %}
@@ -161,9 +174,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-list-definition">
+        <section class="sg-section sg-card" id="sg-section-list-definition">
             <header class="sg-section__header">
-            <h2 class="sg__headline">list-definition</h2>
+            <h2 class="sg__headline sg-card__headline">list-definition</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/list-definition.html' %}
@@ -173,9 +186,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-list-ordered">
+        <section class="sg-section sg-card" id="sg-section-list-ordered">
             <header class="sg-section__header">
-            <h2 class="sg__headline">list-ordered</h2>
+            <h2 class="sg__headline sg-card__headline">list-ordered</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/list-ordered.html' %}
@@ -185,9 +198,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-list-unordered">
+        <section class="sg-section sg-card" id="sg-section-list-unordered">
             <header class="sg-section__header">
-            <h2 class="sg__headline">list-unordered</h2>
+            <h2 class="sg__headline sg-card__headline">list-unordered</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/list-unordered.html' %}
@@ -197,9 +210,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-media">
+        <section class="sg-section sg-card" id="sg-section-media">
             <header class="sg-section__header">
-            <h2 class="sg__headline">media</h2>
+            <h2 class="sg__headline sg-card__headline">media</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/media.html' %}
@@ -209,9 +222,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-meter-and-progress">
+        <section class="sg-section sg-card" id="sg-section-meter-and-progress">
             <header class="sg-section__header">
-            <h2 class="sg__headline">meter-and-progress</h2>
+            <h2 class="sg__headline sg-card__headline">meter-and-progress</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/meter-and-progress.html' %}
@@ -221,9 +234,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-preformated-text">
+        <section class="sg-section sg-card" id="sg-section-preformated-text">
             <header class="sg-section__header">
-            <h2 class="sg__headline">preformated-text</h2>
+            <h2 class="sg__headline sg-card__headline">preformated-text</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/preformated-text.html' %}
@@ -233,9 +246,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-sample-content-block">
+        <section class="sg-section sg-card" id="sg-section-sample-content-block">
             <header class="sg-section__header">
-            <h2 class="sg__headline">sample-content-block</h2>
+            <h2 class="sg__headline sg-card__headline">sample-content-block</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/sample-content-block.html' %}
@@ -245,9 +258,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-tabular-data">
+        <section class="sg-section sg-card" id="sg-section-tabular-data">
             <header class="sg-section__header">
-            <h2 class="sg__headline">tabular-data</h2>
+            <h2 class="sg__headline sg-card__headline">tabular-data</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/tabular-data.html' %}
@@ -257,9 +270,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-text-elements">
+        <section class="sg-section sg-card" id="sg-section-text-elements">
             <header class="sg-section__header">
-            <h2 class="sg__headline">text-elements</h2>
+            <h2 class="sg__headline sg-card__headline">text-elements</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/text-elements.html' %}
@@ -269,9 +282,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-time">
+        <section class="sg-section sg-card" id="sg-section-time">
             <header class="sg-section__header">
-            <h2 class="sg__headline">time</h2>
+            <h2 class="sg__headline sg-card__headline">time</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/base/time.html' %}
@@ -286,9 +299,9 @@
     <article>
         <h1 class="sg__headline" id="sg-category-modules">Modules</h1>
 
-        <section class="sg-section" id="sg-section-module-headlines">
+        <section class="sg-section sg-card" id="sg-section-module-headlines">
             <header class="sg-section__header">
-            <h2 class="sg__headline">Module Headlines</h2>
+            <h2 class="sg__headline sg-card__headline">Module Headlines</h2>
                 </header>
             <div class="sg-section__content sg__content--font">
                 {% include 'markup/modules/headlines.html' %}
@@ -298,9 +311,9 @@
             </footer>
         </section>
 
-        <section class="sg-section" id="sg-section-modul-colors">
+        <section class="sg-section sg-card" id="sg-section-modul-colors">
             <header class="sg-section__header">
-            <h2 class="sg__headline">Modul Colors</h2>
+            <h2 class="sg__headline sg-card__headline">Modul Colors</h2>
                 </header>
             <div class="sg-section__content">
                 {% include 'markup/modules/colors.html' %}
@@ -312,7 +325,9 @@
 
     </article>
 
-    <a href="#top" class="top">Back to top</a>
+    <p><a href="#top" class="top sg-button">Back to top</a></p>
+    <p><a href="#top" class="sg-button">Back to top</a></p>
+</div>
 </main>
 
 
@@ -325,10 +340,12 @@
 
 <script>
     /*! anchorific 2014-08-06 */
-    "function"!=typeof Object.create&&(Object.create=function(a){function b(){}return b.prototype=a,new b}),function(a,b,c,d){"use strict";var e={init:function(b,c){var d=this;d.elem=c,d.$elem=a(c),d.opt=a.extend({},this.opt,b),d.headers=d.$elem.find(".sg__headline"),d.previous=0,0!==d.headers.length&&(d.first=parseInt(d.headers.prop("nodeName").substring(1),null)),d.build()},opt:{navigation:".anchorific",speed:200,anchorClass:"sg-anchor",anchorText:"#",top:".top",spy:!0,position:"append",spyOffset:!0},build:function(){var b,c=this,d=function(){};c.opt.navigation&&(a(c.opt.navigation).append("<ul class='sg-navigation__list' />"),c.previous=a(c.opt.navigation).find("ul").last(),d=function(a){return c.navigations(a)});for(var e=0;e<c.headers.length;e++)b=c.headers.eq(e),d(b),c.anchor(b);c.opt.spy&&c.spy(),c.opt.top&&c.back()},navigations:function(b){var c,e,f,g=this,h=g.name(b);b.attr("id")!==d&&(h=b.attr("id")),c=a("<a />").attr("href","#"+h).text(b.text()),e=a("<li />").append(c),f=parseInt(b.prop("nodeName").substring(1),null),e.attr("data-tag",f),g.subheadings(f,e),g.first=f},subheadings:function(b,c){var d=this,e=(a(d.opt.navigation).find("ul"),a(d.opt.navigation).find("li"));b===d.first?d.previous.append(c):b>d.first?(e.last().append("<ul />"),a(d.opt.navigation).find("ul").last().append(c),d.previous=c.parent()):(a("li[data-tag="+b+"]").last().parent().append(c),d.previous=c.parent())},name:function(a){var b=a.text().replace(/[^\w\s]/gi,"").replace(/\s+/g,"-").toLowerCase();return b},anchor:function(b){var c,e,f=this,g=f.name(b),h=f.opt.anchorText,i=f.opt.anchorClass;b.attr("id")===d&&b.attr("id",g),e=b.attr("id"),c=a("<a />").attr("href","#"+e).html(h).addClass(i),"append"===f.opt.position?b.append(c):b.prepend(c)},back:function(){var b=this,c=a("body, html"),d=a(b.opt.top);d.on("click",function(a){a.preventDefault(),c.animate({scrollTop:0},b.opt.speed)})},top:function(b){var c,d=this,e=d.opt.top;e!==!1&&(c=a(b).scrollTop()>200?a(e).fadeIn():a(e).fadeOut())},spy:function(){var c,e,f,g=this;a(b).scroll(function(){g.top(this),c=g.headers.map(function(){return a(this).offset().top-a(b).scrollTop()<g.opt.spyOffset?this:void 0}),c=a(c).eq(c.length-1),c&&c.length&&(e=a('li:has(a[href="#'+c.attr("id")+'"])'),f!==d&&f.removeClass("active"),e.addClass("active"),f=e)})}};a.fn.anchorific=function(b){return this.each(function(){if(!a.data(this,"anchorific")){var c=Object.create(e);c.init(b,this),a.data(this,"anchorific",c)}})}}(jQuery,window,document);
+    "function"!=typeof Object.create&&(Object.create=function(a){function b(){}return b.prototype=a,new b}),function(a,b,c,d){"use strict";var e={init:function(b,c){var d=this;d.elem=c,d.$elem=a(c),d.opt=a.extend({},this.opt,b),d.headers=d.$elem.find(".sg__headline"),d.previous=0,0!==d.headers.length&&(d.first=parseInt(d.headers.prop("nodeName").substring(1),null)),d.build()},opt:{navigation:".anchorific",speed:200,anchorClass:"sg-anchor",anchorText:"#",top:".top",spy:!0,position:"append",spyOffset:!0},build:function(){var b,c=this,d=function(){};c.opt.navigation&&(a(c.opt.navigation).append("<ul class='sg-navigation__list' />"),c.previous=a(c.opt.navigation).find("ul").last(),d=function(a){return c.navigations(a)});for(var e=0;e<c.headers.length;e++)b=c.headers.eq(e),d(b),c.anchor(b);c.opt.spy&&c.spy(),c.opt.top&&c.back()},navigations:function(b){var c,e,f,g=this,h=g.name(b);b.attr("id")!==d&&(h=b.attr("id")),c=a("<a />").attr("href","#"+h).text(b.text()),e=a("<li />").append(c),f=parseInt(b.prop("nodeName").substring(1),null),e.attr("data-tag",f),g.subheadings(f,e),g.first=f},subheadings:function(b,c){var d=this,e=(a(d.opt.navigation).find("ul"),a(d.opt.navigation).find("li"));b===d.first?d.previous.append(c):b>d.first?(e.last().append("<ul />"),a(d.opt.navigation).find("ul").last().append(c),d.previous=c.parent()):(a("li[data-tag="+b+"]").last().parent().append(c),d.previous=c.parent())},name:function(a){var b=a.text().replace(/[^\w\s]/gi,"").replace(/\s+/g,"-").toLowerCase();return b},anchor:function(b){var c,e,f=this,g=f.name(b),h=f.opt.anchorText,i=f.opt.anchorClass;b.attr("id")===d&&b.attr("id",g),e=b.attr("id"),c=a("<a />").attr("href","#"+e).html(h).addClass(i),"append"===f.opt.position?b.append(c):b.prepend(c)},back:function(){var b=this,c=a(".sg-content"),d=a(b.opt.top);d.on("click",function(a){a.preventDefault(),c.animate({scrollTop:0},b.opt.speed)})},top:function(b){var c,d=this,e=d.opt.top;e!==!1&&(c=a(b).scrollTop()>200?a(e).fadeIn():a(e).fadeOut())},spy:function(){var c,e,f,g=this;a(b).scroll(function(){g.top(this),c=g.headers.map(function(){return a(this).offset().top-a(b).scrollTop()<g.opt.spyOffset?this:void 0}),c=a(c).eq(c.length-1),c&&c.length&&(e=a('li:has(a[href="#'+c.attr("id")+'"])'),f!==d&&f.removeClass("active"),e.addClass("active"),f=e)})}};a.fn.anchorific=function(b){return this.each(function(){if(!a.data(this,"anchorific")){var c=Object.create(e);c.init(b,this),a.data(this,"anchorific",c)}})}}(jQuery,window,document);
 
-    $('.sg').anchorific();
+    $('.sg-content').anchorific();
     $('.sg-anchor').css('margin-left','10px');
+
+    $('.sg-navigation__list > li:first-child > a').addClass('is-active');
     //$('.sg-section .sg-anchor').remove();
 
 

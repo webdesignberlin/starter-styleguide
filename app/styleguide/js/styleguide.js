@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //var renderSg = require('./renderStyleguide');
   var generateCodeSnippets = require('./codeSnippets');
+  var initScrollSpy = require('./scrollSpy');
   //renderSg();
   generateCodeSnippets();
+  initScrollSpy('.sg__headline', '.sg-content');
 
 });
