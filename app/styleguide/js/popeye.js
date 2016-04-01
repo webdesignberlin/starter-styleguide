@@ -15,13 +15,13 @@
 
 'use strict';
 
-function popeye(options) {
+module.exports = function(options){
 
   if (!options) {
     options = {
       headlineClass: 'headline',
       navigationClass: 'list',
-      anchor: '#'
+      anchorText: '#'
     };
   }
 
@@ -43,8 +43,9 @@ function popeye(options) {
 
     //create links with id and add to the headlines
     var a = document.createElement('a');
+    a.classList.add('sg-anchor');
     a.href = '#' + headlineID;
-    a.innerHTML = options.anchor;
+    a.innerHTML = options.anchorText;
     headlines[i].appendChild(a);
 
     // create the li elements that contain the links
@@ -56,6 +57,7 @@ function popeye(options) {
 
     if (headlines[i].localName === 'h1') {
       list.appendChild(li);
+      li.dataset.tag = '1';
     } else {
       var nodelengeth = list.children.length - 1;
 
@@ -74,4 +76,7 @@ function popeye(options) {
 
   }
 
-}
+  // add active Class for first Link in generated list
+  list.children[0].children[0].classList.add('is-active');
+
+};
