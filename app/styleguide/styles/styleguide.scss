@@ -67,6 +67,7 @@ html, body {
     @media (min-width: $sg-screen-md) {
         flex: 0 0 360px;
         overflow: auto;
+        overflow-scrolling: touch;
     }
 
     //font-size: 14px;
@@ -101,9 +102,9 @@ html, body {
 
     @media (min-width: $sg-screen-md) {
         flex: 1 1 100px;
+        overflow: auto;
+        overflow-scrolling: touch;
     }
-
-    overflow: auto;
 
     padding-left: $sg-spacing;
     padding-right: ($sg-spacing * 2);
