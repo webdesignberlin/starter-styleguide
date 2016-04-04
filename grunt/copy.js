@@ -7,7 +7,7 @@ module.exports = {
 
     projectFiles: {
         expand: true,
-        src: ['<%=globalConfig.app%>/*.ico', '<%=globalConfig.app%>/robots.txt'],
+        src: ['<%=globalConfig.app%>/*.ico', '<%=globalConfig.app%>/robots.txt', '<%=globalConfig.app%>/humans.txt'],
         dest:'<%=globalConfig.dist%>/',
         flatten: true
     }

@@ -2,6 +2,9 @@
 'default':
   - 'sync'
 
+'init':
+  - 'copy:projectFiles'
+
 # BrowserSync
 'sync':
   - 'browserSync'
