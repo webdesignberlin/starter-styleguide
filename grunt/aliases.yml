@@ -12,6 +12,7 @@
 
 # Styleguide
 'build-sg':
+  - 'styleguide_colors:sg'
   - 'sass:sg'
   - 'postcss:sg'
   - 'nunjucks:sg'
