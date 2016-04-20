@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="author" content="{{ site.author }}">
+<meta property="og:locale" content="{{ site.language }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+
+{% if page.title %}
+<title>{{ page.title }}</title>
+<meta property="og:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+<title>{{ site.title }}</title>
+<meta property="og:title" content="{{ site.title }}">
+<meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+
+{% if page.description %}
+<meta property="og:description" content="{{ page.description }}">
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta property="og:description" content="{{ site.description }}">
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:image" content="{{ site.url }}/img/card.png">
+<meta property="twitter:image" content="{{ site.url }}/img/card.png">
+<meta property="og:image:width" content="118">
+<meta property="og:image:height" content="118">
+
+<meta name="twitter:site" content="{{ site.social.twitter.name }}">
+<meta name="twitter:creator" content="{{ site.social.twitter.name }}">
+
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
+
+{% if site.social.googleplus.link %}
+<link rel="author" href="{{ site.social.googleplus.link }}">
+{% endif %}
+
+{% include favicon-madness.html %}
