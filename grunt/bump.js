@@ -1,9 +1,9 @@
 /**
- * + Task Config: Clean
- * https://github.com/gruntjs/grunt-contrib-clean
+ * + Task Config: Bump
+ * https://github.com/vojtajina/grunt-bump
  * =====================================================================
  *
- * @Description config for clean temporary files
+ * @Description config Bump package version, create tag, commit, push ...
  */
 module.exports = {
 
@@ -18,7 +18,7 @@ module.exports = {
     tagName: 'v%VERSION%',
     tagMessage: 'Version %VERSION%',
     push: true,
-    pushTo: 'origin',
+    pushTo: 'upstream',
     gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
     globalReplace: false,
     prereleaseName: false,
