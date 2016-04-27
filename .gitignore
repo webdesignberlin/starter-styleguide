@@ -5,7 +5,7 @@
 # processed assets
 app/styles/*.map
 app/js/*.map
-app/details/**/*
+app/styleguide/markup/modules/colors.html
 # inline css styles
 app/templates/_main.css
 
@@ -15,22 +15,6 @@ dist/
 # vendor files
 app/styles/vendor/**/*
 app/js/vendor/**/*
-
-# sassdocs
-docs/*
-
-# release
-jdb_release.tar.gz
-release_data/dev_host.json
-release_data/stage_host.json
-release_data/live_host.json
-release_data/id_rsa
-
-# report
-reports/
-
-# coverage results of unit tests
-coverage/
 
 
 ###
