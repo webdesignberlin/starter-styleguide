@@ -1,6 +1,6 @@
 {
   "name": "starter-styleguide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "basic starter kit with styleguide",
   "main": "index.html",
   "scripts": {
