@@ -1,27 +1,27 @@
 /* TEAM */
 
-Developer: 	Michael Gerstmann
-Twitter: 	@top_webdesign
-Location: 	Berlin
+Developer: 	    Michael Gerstmann
+Twitter: 	    @top_webdesign
+Location: 	    Berlin
 
-Developer: 	Frank Holder
-Twitter: 	@atom_strom
-Location: 	Berlin
+Developer: 	    Frank Holder
+Twitter: 	    @atom_strom
+Location: 	    Berlin
 
-Developer: 	Thomas Juhnke
-Twitter: 	@dreadwarrior
-Location: 	Berlin
+Developer: 	    Thomas Juhnke
+Twitter: 	    @dreadwarrior
+Location: 	    Berlin
 
-Screendesigner:	McFIT Creative Office
-Location: 	Berlin
+Screendesign:	McFIT Creative Office
+Location: 	    Berlin
 
 
 /* THANKS */
 
-Name:       	McFIT GMBH | CREATIVE OFFICE
+Name:       	McFIT GmbH | CREATIVE OFFICE
 
 
 /* SITE */
 
-Standards:	HTML5, CSS3
-Tools:		Coffee and PHPStorm
+Standards:	    HTML5, CSS3
+Tools:		    Coffee and PHPStorm
