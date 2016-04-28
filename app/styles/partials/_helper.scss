@@ -1,0 +1,125 @@
+/**
+ * Utility classes
+ * @requires {mixin} clearfix - clear floats
+ */
+
+// Floats
+// -------------------------
+.clearfix { @include clearfix; }
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pull-right { float: right; }
+
+.pull-left { float: left; }
+
+
+// Toggling content
+// -------------------------
+
+.show { display: block !important; }
+
+.hide { display: none !important; }
+
+.invisible { visibility: hidden; }
+
+.text-hide {
+    font: #{0/0} a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.overflow-hidden {
+    position: relative;
+    overflow-y: hidden;
+}
+
+/// Hide from screenreaders and browsers
+///
+/// Credit: HTML5 Boilerplate
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+// Credit: HTML5 Boilerplate
+.sr-only-focusable {
+    &:active,
+    &:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+    }
+}
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.text-left { text-align: left; }
+
+
+%img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.reset-button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    appearance: button; /* for input */
+    user-select: none; /* for button */
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+.helper-height {
+    height: 100%;
+}
+
+%prevent-long-text {
+    /*white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    hyphens: auto;*/
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}

@@ -1,0 +1,92 @@
+/**
+ * + Project variables
+ * Main Variables for Project
+ *
+ * @author mg, fh
+ */
+
+$debug-local: false;
+
+/* <@colors */
+$colors: (
+    /// Color White
+    /// @group Colors
+    /// @type Color
+        'color-definition__white': #ffffff,
+    /// Color Red
+    /// @group Colors
+    /// @type Color
+        'color-definition__red': #e2281b,
+    /// Color Red
+    /// @group Colors
+    /// @type Color
+        'color-definition__gray': #c2c2c4,
+    /// Color Gray dark
+    /// @group Colors
+    /// @type Color
+        'color-definition__gray-dark': #666666
+);
+/* colors@> */
+
+/// Color Foreground
+/// @group Colors
+/// @require $color-definition__black
+$color-foreground:                  map-get($colors, color-definition__gray);
+/// Color Background
+/// @group Colors
+/// @require$color-definition__white
+$color-background:                  map-get($colors, color-definition__white);
+/// Color Primary
+/// @group Colors
+/// @require$color-definition__blue
+$color-primary:                  map-get($colors, color-definition__red);
+/// Color Secondary
+/// @group Colors
+/// @require$color-definition__yellow
+$color-secondary:                  map-get($colors, color-definition__gray);
+/// Color Danger
+/// @group Colors
+/// @require$color-definition__red
+$color-danger:                  map-get($colors, color-definition__red);
+/* = Colors */
+
+/* + Z-Indexes */
+$z-layers: (
+        'notifications': 10
+);
+
+@function z($layer) {
+    @if not map-has-key($z-layers, $layer) {
+        @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+    }
+
+    @return map-get($z-layers, $layer);
+}
+/* = Z-Indexes */
+
+
+/**
+ * + Typo
+ */
+$font-stack-sansserif:          Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-stack-normal:             $font-stack-sansserif;
+
+$font-stack-highlight:          'Novecentosanswide-Bold', sans-serif;
+
+$font-size-root:                16px !default;
+
+$font-size-normal:              15px !default;
+$font-size-small:               $font-size-normal / 1.2 !default;
+
+$line-height-normal:            1.5625 !default;
+/* = Typo */
+
+/**
+ * Spacing
+ */
+$spacing-normal:                1em !default;
+$spacing-small:                 $spacing-normal / 2 !default;
+$spacing-large:                 $spacing-normal * 2 !default;
+
+$screen-sm:                     760px;
+$screen-md:                     1024px;
