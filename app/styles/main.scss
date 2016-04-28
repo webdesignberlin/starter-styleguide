@@ -1,0 +1,27 @@
+/**
+ * Main File
+ * Main Styles including Mixins, Functions, Variables and general Styles.
+ * NOTE: Only Imports
+ *
+ * @author mg, fh
+ */
+
+/// if theme:
+/// $theme: 'theme-1';
+
+/// Variables
+@import "variables";
+
+/// Mixins
+@import "mixins/clearfix";
+@import "mixins/font-size";
+
+/// Preparation
+@import 'partials/fonts';
+@import "partials/normalize";
+@import "partials/helper";
+
+// Project Styles
+@import 'modules/btn';
+
+@import "styles";

@@ -1,0 +1,41 @@
+/**
+ * Function to calculate Fontsize in 'rem'
+ *
+ * @group Fonts
+ *
+ * @requires {variable} $font-size-root - Basic Root Font Size
+ *
+ * @param {int} $size - Fontsize as integer
+ *
+ * @author mg
+ *
+ * @returns {int} returns calculated rem
+ *
+*/
+@function calculateRem($size) {
+    $remSize: $size / $font-size-root;
+    @return $remSize * 1rem;
+}
+
+/**
+ * Mixin to calculate Fontsize in 'rem'
+ *
+ * @group Fonts
+ *
+ * @param {int} $size - Fontsize as integer
+ *
+ * @author mg
+ *
+ * @example
+ *  @include font-size(14px)
+ *  Output: font-size: 14px; //Will be overridden if browser supports rem
+ *          font-size: 0.8rem;
+ *
+ * @requires {variable} $size - With px value
+ * @requires {function} calculateRem - Funktion to calculate $size
+ *
+*/
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}

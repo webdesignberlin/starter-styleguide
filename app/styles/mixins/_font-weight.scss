@@ -1,0 +1,32 @@
+/**
+ * Mixin to add font weight
+ *
+ * @group Fonts
+ *
+ * @param {string} $weight - weight as String
+ *
+ * @author mg
+ *
+ * @example
+ *  @include font-weight('thin')
+ *  Output: font-weight: 100;
+ *
+ * @requires {variable} $weight - String
+ *
+*/
+@mixin font-weight($weight) {
+    font-family: $font-stack-highlight;
+
+    @if $weight == 'thin' {
+        font-weight: 100;
+    }
+    @if $weight == 'normal' {
+        font-weight: 300;
+    }
+    @if $weight == 'medium' {
+        font-weight: 500;
+    }
+    @if $weight == 'bold' {
+        font-weight: 700;
+    }
+}
