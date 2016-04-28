@@ -20,4 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initScrollSpy('.sg__headline', '.sg-content');
   popeye(popeyeOptions);
 
+  console.log('styleguide is loaded');    
+
 });

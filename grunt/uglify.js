@@ -7,6 +7,7 @@
 module.exports = {
 	sg: {
 		options: {
+			sourceMap: true,
 			sourceMapIncludeSources: true
 		},
 		files: {
