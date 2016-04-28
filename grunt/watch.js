@@ -24,8 +24,8 @@ module.exports = {
         tasks: ['sass:dev', 'postcss:dev']
     },
     js: {
-        files: [],
-        tasks: []
+        files: ['<%= globalConfig.app %>/js/**/*'],
+        tasks: ['jshint', 'browserify:dev']
     },
     html: {
         files: [],
