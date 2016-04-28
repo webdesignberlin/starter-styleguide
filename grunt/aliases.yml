@@ -17,5 +17,6 @@
   - 'postcss:sg'
   - 'nunjucks:sg'
   - 'htmlmin:sg'
+  - 'jshint'
   - 'browserify:sg'
   - 'uglify:sg'

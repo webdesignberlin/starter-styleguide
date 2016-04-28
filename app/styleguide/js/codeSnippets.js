@@ -17,8 +17,8 @@ module.exports = function(){
           snippetSingleVisibility = false;
         }
       } else {
-        for (var i = 0; i < snippets.length; i++) {
-          snippets[i].classList.toggle('sg-code-snippet--visible');
+        for (var j = 0; j < snippets.length; j++) {
+          snippets[j].classList.toggle('sg-code-snippet--visible');
         }
       }
     }
