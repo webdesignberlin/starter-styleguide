@@ -28,7 +28,7 @@ module.exports = {
         tasks: ['jshint', 'browserify:dev']
     },
     html: {
-        files: [],
-        tasks: []
-    },
+        files: ['<%= globalConfig.app %>/**/*.html'],
+        tasks: ['nunjucks:dev']
+    }
 };
