@@ -11,5 +11,22 @@ module.exports = {
         files: {
             '<%= globalConfig.dist %>/styleguide/styles/styleguide.css' : '<%= globalConfig.dist %>/styleguide/styles/styleguide.css'
         }
+    },
+    dev: {
+        options: {
+            map: true
+        },
+        files: {
+            '<%= globalConfig.dist %>/styles/main.css' : '<%= globalConfig.dist %>/styles/main.css'
+        }
+    },
+    prod: {
+        options: {
+            map: false
+        },
+        files: {
+            '<%= globalConfig.dist %>/styles/main.css' : '<%= globalConfig.dist %>/styles/main.css'
+        }
     }
+
 };

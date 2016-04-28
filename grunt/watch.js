@@ -9,5 +9,17 @@ module.exports = {
     sg: {
         files: ['<%= globalConfig.app %>/styleguide/**/*.*'],
         tasks: ['build-sg']
-    }
+    },
+    styles: {
+        files: ['<%= globalConfig.app %>/styles/**/*'],
+        tasks: ['sass:dev', 'postcss:dev']
+    },
+    js: {
+        files: [],
+        tasks: []
+    },
+    html: {
+        files: [],
+        tasks: []
+    },
 };
