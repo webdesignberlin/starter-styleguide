@@ -20,3 +20,9 @@
   - 'jshint'
   - 'browserify:sg'
   - 'uglify:sg'
+
+# Production build
+'production':
+  - 'jshint'
+  - 'browserify:prod'
+  - 'uglify'
