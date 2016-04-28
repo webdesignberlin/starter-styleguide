@@ -1,1 +1,2 @@
-console.log('js is working!');
+var consoleLogMessage = 'js is working!';
+console.log(consoleLogMessage);

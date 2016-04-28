@@ -23,6 +23,26 @@ module.exports = {
         ext: ".html"
       }
     ]
+  },
+  dev: {
+    options: {
+      paths: '<%=globalConfig.app%>/',
+      data: {
+        global: '<%=global %>' // import global.json from Gruntfile.js
+      }
+    },
+    files: [
+      {
+        expand: true,
+        cwd: '<%=globalConfig.app%>/',
+        src: [
+            '**/*.html',
+            '!styleguide/**/*.html' // ignore styleguide folder
+        ],
+        dest: 'dist/',
+        ext: '.html'
+      }
+    ]
   }
 
 

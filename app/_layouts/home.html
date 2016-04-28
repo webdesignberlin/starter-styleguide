@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 <head>
-    {% include head.html %}
+    {% include '_includes/meta.html' %}
 </head>
 <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    <!--{% include 'header.html' ignore missing %}-->
+    {% block content %}
+    <!-- empty content block -->
+    {% endblock %}
+    <!--{% include 'footer.html' ignore missing %}-->
+
+    {% include '_includes/scripts.html' %}
 </body>
 </html>
