@@ -6,6 +6,15 @@
  */
 
 module.exports = {
+    // overall options
+    options: {
+        livereload: true,
+        event: [
+            'added',
+            'deleted',
+            'changed'
+        ]
+    },
     sg: {
         files: ['<%= globalConfig.app %>/styleguide/**/*.*'],
         tasks: ['build-sg']
